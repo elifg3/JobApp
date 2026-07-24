@@ -3,7 +3,9 @@ import streamlit as st
 
 
 # Sayfa Başlığı ve Açıklama
-st.title("Mantolama Maliyet Hesapla")
+st.title("Mantolama 
+Maliyet 
+Hesapla")
 
 # 1. EPS
 col1, col2,cola = st.columns([0.2, 0.2,0.6])
