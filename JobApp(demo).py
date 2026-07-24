@@ -4,11 +4,13 @@ import streamlit as st
 st.title("Mantolama Maliyet Hesapla")
 
 # 1. EPS
-col1, col2 = st.columns([1, 1])
+col1, col2,cola = st.columns([1, 1])
 with col1:
     eps_input = st.number_input(
         "1 m² EPS fiyatı (TL)", min_value=0.0, step=1.0, value=None, key="eps_fiyat"
     )
+with cola:
+    st.markdown(:joy:)
 with col2:
     epsmiktar = st.number_input(
         "Miktar (m²)", min_value=0.0, step=1.0, value=1.0, key="eps_miktar"
