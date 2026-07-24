@@ -1,4 +1,12 @@
 import streamlit as st
+# Input alanlarının maksimum genişliğini 200px yapalım
+st.markdown("""
+    <style>
+    div[data-baseweb="input"] {
+        width: 200px !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Sayfa Başlığı ve Açıklama
 st.title("Mantolama Maliyet Hesapla")
