@@ -8,7 +8,7 @@ with st.expander(" EPS", expanded=True):
   col1, col2 = st.columns([3, 1])
   with col1:
     eps_input = st.number_input(
-        "1 m² EPS fiyatı (TL)", min_value=0.0, step=1.0, key="eps_fiyat"
+        "1 m² EPS fiyatı (TL)", min_value=0.0, step=1.0,value=None key="eps_fiyat"
     )
   with col2:
     epsmiktar = st.number_input(
@@ -20,7 +20,7 @@ with st.expander(" Yapıştırıcı "):
   col3, col4 = st.columns([3, 1])
   with col3:
     glue_input = st.number_input(
-        "25 kg yapıştırıcı fiyatı (TL)", min_value=0.0, step=1.0, key="glue_fiyat"
+        "25 kg yapıştırıcı fiyatı (TL)", min_value=0.0, step=1.0,value=None key="glue_fiyat"
     )
   with col4:
     gluemiktar = st.number_input(
@@ -32,7 +32,7 @@ with st.expander(" Sıva "):
   col5, col6 = st.columns([3, 1])
   with col5:
     siva_input = st.number_input(
-        "25 kg sıva fiyatı (TL)", min_value=0.0, step=1.0, key="siva_fiyat"
+        "25 kg sıva fiyatı (TL)", min_value=0.0, step=1.0,value=None key="siva_fiyat"
     )
   with col6:
     sivamiktar = st.number_input(
@@ -47,6 +47,7 @@ with st.expander(" Mineral Sıva "):
         "25 kg mineral sıva fiyatı (TL)",
         min_value=0.0,
         step=1.0,
+      value=None,
         key="mineral_fiyat",
     )
   with col8:
@@ -59,7 +60,7 @@ with st.expander(" File "):
   col9, col10 = st.columns([3, 1])
   with col9:
     file_input = st.number_input(
-        "50 m² file fiyatı (TL)", min_value=0.0, step=1.0, key="file_fiyat"
+        "50 m² file fiyatı (TL)", min_value=0.0, step=1.0, value=None key="file_fiyat"
     )
   with col10:
     filemiktar = st.number_input(
@@ -71,7 +72,7 @@ with st.expander(" Dübel "):
   col11, col12 = st.columns([3, 1])
   with col11:
     dubel_input = st.number_input(
-        "500 adet dübel fiyatı (TL)", min_value=0.0, step=1.0, key="dubel_fiyat"
+        "500 adet dübel fiyatı (TL)", min_value=0.0, step=1.0, value=None,key="dubel_fiyat"
     )
   with col12:
     dubelmiktar = st.number_input(
@@ -86,6 +87,7 @@ with st.expander(" Fileli Köşe"):
         "1 boy fileli köşe fiyatı (TL)",
         min_value=0.0,
         step=1.0,
+      value=None,
         key="kose_fiyat",
     )
   with col14:
