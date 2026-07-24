@@ -4,93 +4,86 @@ import streamlit as st
 st.title("Mantolama Maliyet Hesapla")
 
 # 1. EPS
-with st.expander(" EPS", expanded=True):
-  col1, col2 = st.columns([3, 1])
-  with col1:
+col1, col2 = st.columns([3, 1])
+with col1:
     eps_input = st.number_input(
-        "1 m² EPS fiyatı (TL)", min_value=0.0, step=1.0,value=None key="eps_fiyat"
+        "1 m² EPS fiyatı (TL)", min_value=0.0, step=1.0, value=None, key="eps_fiyat"
     )
-  with col2:
+with col2:
     epsmiktar = st.number_input(
         "Miktar (m²)", min_value=0.0, step=1.0, value=1.0, key="eps_miktar"
     )
 
 # 2. Yapıştırıcı (25 kg)
-with st.expander(" Yapıştırıcı "):
-  col3, col4 = st.columns([3, 1])
-  with col3:
+col3, col4 = st.columns([3, 1])
+with col3:
     glue_input = st.number_input(
-        "25 kg yapıştırıcı fiyatı (TL)", min_value=0.0, step=1.0,value=None key="glue_fiyat"
+        "25 kg yapıştırıcı fiyatı (TL)", min_value=0.0, step=1.0, value=None, key="glue_fiyat"
     )
-  with col4:
+with col4:
     gluemiktar = st.number_input(
         "Miktar (kg)", min_value=0.0, step=1.0, value=4.0, key="glue_miktar"
     )
 
 # 3. Sıva (25 kg)
-with st.expander(" Sıva "):
-  col5, col6 = st.columns([3, 1])
-  with col5:
+col5, col6 = st.columns([3, 1])
+with col5:
     siva_input = st.number_input(
-        "25 kg sıva fiyatı (TL)", min_value=0.0, step=1.0,value=None key="siva_fiyat"
+        "25 kg sıva fiyatı (TL)", min_value=0.0, step=1.0, value=None, key="siva_fiyat"
     )
-  with col6:
+with col6:
     sivamiktar = st.number_input(
         "Miktar (kg)", min_value=0.0, step=1.0, value=4.5, key="siva_miktar"
     )
 
 # 4. Mineral Sıva (25 kg)
-with st.expander(" Mineral Sıva "):
-  col7, col8 = st.columns([3, 1])
-  with col7:
+col7, col8 = st.columns([3, 1])
+with col7:
     mineralsiva_input = st.number_input(
         "25 kg mineral sıva fiyatı (TL)",
         min_value=0.0,
         step=1.0,
-      value=None,
+        value=None,
         key="mineral_fiyat",
     )
-  with col8:
+with col8:
     mineralsivamiktar = st.number_input(
         "Miktar (kg)", min_value=0.0, step=1.0, value=2.5, key="mineral_miktar"
     )
 
 # 5. File (50m2)
-with st.expander(" File "):
-  col9, col10 = st.columns([3, 1])
-  with col9:
+col9, col10 = st.columns([3, 1])
+with col9:
     file_input = st.number_input(
-        "50 m² file fiyatı (TL)", min_value=0.0, step=1.0, value=None key="file_fiyat"
+        "50 m² file fiyatı (TL)", min_value=0.0, step=1.0, value=None, key="file_fiyat"
     )
-  with col10:
+with col10:
     filemiktar = st.number_input(
         "Miktar (m²)", min_value=0.0, step=1.0, value=1.1, key="file_miktar"
     )
 
 # 6. Dübel (500 adet)
-with st.expander(" Dübel "):
-  col11, col12 = st.columns([3, 1])
-  with col11:
+col11, col12 = st.columns([3, 1])
+with col11:
     dubel_input = st.number_input(
-        "500 adet dübel fiyatı (TL)", min_value=0.0, step=1.0, value=None,key="dubel_fiyat"
+        "500 adet dübel fiyatı (TL)", min_value=0.0, step=1.0, value=None, key="dubel_fiyat"
     )
-  with col12:
+with col12:
     dubelmiktar = st.number_input(
         "Miktar (adet)", min_value=0.0, step=1.0, value=6.0, key="dubel_miktar"
     )
 
 # 7. Fileli Köşe
-with st.expander(" Fileli Köşe"):
-  col13, col14 = st.columns([3, 1])
-  with col13:
+col13, col14 = st.columns([3, 1])
+with col13:
     filelikose_input = st.number_input(
         "1 boy fileli köşe fiyatı (TL)",
         min_value=0.0,
         step=1.0,
-      value=None,
+        value=None,
         key="kose_fiyat",
     )
-  with col14:
+with col14:
     filelikosemiktar = st.number_input(
         "Miktar (boy)", min_value=0.0, step=1.0, value=0.1, key="kose_miktar"
     )
