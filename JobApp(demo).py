@@ -3,7 +3,7 @@ import streamlit as st
 st.markdown("""
     <style>
     div[data-baseweb="input"] {
-        width: 200px !important;
+        width: 20px !important;
     }
     </style>
 """, unsafe_allow_html=True)
