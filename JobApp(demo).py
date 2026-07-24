@@ -1,18 +1,12 @@
 import streamlit as st
 # Input alanlarının maksimum genişliğini 200px yapalım
-st.markdown("""
-    <style>
-    div[data-baseweb="input"] {
-        width: 20px !important;
-    }
-    </style>
-""", unsafe_allow_html=True)
+
 
 # Sayfa Başlığı ve Açıklama
 st.title("Mantolama Maliyet Hesapla")
 
 # 1. EPS
-col1, col2 = st.columns([1, 1])
+col1, col2,cola = st.columns([0.2, 0.3,0.5])
 with col1:
     eps_input = st.number_input(
         "1 m² EPS fiyatı (TL)", min_value=0.0, step=1.0, value=None, key="eps_fiyat"
