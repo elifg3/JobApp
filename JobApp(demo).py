@@ -1,7 +1,7 @@
 import streamlit as st
 
 # Sayfa Başlığı ve Açıklama
-st.markdown("`Mantolama Maliyet Hesapla` :joy:")
+st.markdown("##`Mantolama Maliyet Hesapla` :joy:")
 
 # 1. EPS
 col1, col2 = st.columns([3, 1])
